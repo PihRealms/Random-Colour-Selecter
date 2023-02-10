@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Colour Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class ="mainColour">
+    <div class="main" class ="mainColour">
+        <div id="title">
+            <h1> Random Colour Selector</h1>
+            <h3 >-by <a  id="link" href="https://pihrealms.itch.io/" target="_blank">Pih Realms</h3></a> 
+        </div>
+        <div id="primary">
+            <div id="colourCodeBox" class ="mainColour">
+                <h3>Colour code is <span id="code">rgb(233, 255, 191)</span></h3>
+            </div>
+            <div id="optionBox">
+                <div id="generateIcon"  class="icon mainColour">
+                    <img class="iconAssets" onclick="generate()" src="exchange-refresh-icon.png" alt="">
+                </div>
+                
+                <div id="CopyIcon" class="icon mainColour">
+                    <img class="iconAssets" onclick="copy()" src="copy-link-icon.png" alt="">
+                </div>
+
+                
+            </div>
+        </div>
+        <div id="secondary">
+            <h3 id="hexText">Rgb</h3>
+            <div id="toggle" onclick="switchToggle()">
+                <div id="toggleHandle"></div>
+            </div>
+            <h3 id="hexText">Hex</h3>
+        </div>
+
+        <div id="secondarytwo">
+            <button id="btn" onclick="switchToggle()">Switch to Hex mode</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
